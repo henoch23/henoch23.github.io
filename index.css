@@ -1,0 +1,221 @@
+/* index.css */
+
+@font-face {
+  font-family: "Creepy";
+  src: url("Creepy.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+button {
+  font-family: "Creepy", cursive;
+}
+header h1 {
+  color: red;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  margin-right: 20px;
+  position: relative;
+}
+
+header a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+header a:hover {
+  background-color: #ff0000;
+}
+
+header li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ff0000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+header li:hover::after {
+  transform: scaleX(1);
+}
+
+body {
+  background-color: #343434;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+header a:hover {
+  background-color: #fff;
+  color: #222;
+  border-radius: 5px;
+}
+
+#home {
+  background-image: url("https://source.unsplash.com/1600x900/?horror,creepy,abandoned");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: flicker 1s infinite;
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+#home p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: flicker 1s infinite;
+  font-size: 1.5em;
+  line-height: 1.5;
+  max-width: 40em;
+}
+
+@keyframes flicker {
+  0% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+footer {
+  background-color: #222;
+  padding: 1em;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.8em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#gallery {
+  background-image: url("https://source.unsplash.com/1600x900/?horror,creepy,abandoned");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#gallery h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: flicker 1s infinite;
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+#gallery p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: flicker 1s infinite;
+  font-size: 1.5em;
+  line-height: 1.5;
+  max-width: 40em;
+}
+
+section#gallery {
+  background-color: #333333;
+  padding: 50px 0;
+  text-align: center;
+}
+
+section#gallery h2 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: flicker 2s ease-in-out infinite;
+}
+
+section#gallery div {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+section#gallery div:hover {
+  transform: scale(1.1);
+}
+
+section#gallery p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+/* Selesai dari gallery */
+#blog {
+  background-image: url("https://source.unsplash.com/1600x900/?horror,creepy,abandoned");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes flicker {
+  0% {
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+  }
+  50% {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+  }
+}
