@@ -1,82 +1,120 @@
-<!-- blog.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <title>Blog</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Raekel's Homepage</h1>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="index.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacts.html">Contacts</a>
       </nav>
     </header>
 
-    <section id="blog">
-      <h2>Blog</h2>
-      <article>
-        <h3>Review Ikai, Game Horror Dengan Unsur Mitologi Jepang</h3>
-        <p>
-          Ikai adalah game yang mengambil tema Jepang. Mulai dari plot cerita,
-          lingkungan, serta hantu yang dihadirkan sangat lekat dengan kebudayaan
-          ...
-          <a
-            href="https://www.gamefinity.id/game/review/review-ikai-game-horror-dengan-unsur-mitologi-jepang"
-            >Baca selengkapnya...</a
-          >
-        </p>
-      </article>
-      <article>
-        <h3>
-          Fears To Fathom: Game Horor Episodik yang Menceritakan Kisah Nyata
-        </h3>
-        <p>
-          Game Fears To Fathom ini merupakan game horor yang unik, karena setiap
-          episodenya menceritakan kisah nyata yang dialami oleh orang-orang ...
-          <a
-            href="https://indo1.id/2023/10/22/fears-to-fathom-game-horor-episodik-yang-menceritakan-kisah-nyata/"
-            >Baca selengkapnya...</a
-          >
-        </p>
-      </article>
-      <article>
-        <h3>
-          Ini 10 Game Horor Terbaik dari Chilla’s Art, Grafis Retro Tapi Bikin
-          Takut!
-        </h3>
-        <p>
-          Ada beberapa game horor terbaik dari developer Chilla's Art. Meskipun
-          grafisnya terbilang jadul, tetapi berhasil bikin pemainnya meringis
-          ketakutan!
+    <!-- carousel -->
+    <div class="carousel">
+      <!-- list item -->
+      <div class="list">
+        <div class="item">
+          <img src="image/ikai01.jpg" />
+          <div class="content">
+            <div class="author">Raekel</div>
+            <div class="title">Ikai</div>
+            <div class="des">
+              <!-- lorem 50 -->
+              During the feudal era of Japan, Naoko, a young woman in training
+              to become a priestess, is left to guard the temple while her uncle
+              goes to protect a nearby village from demons.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/ftf02.jpg" />
+          <div class="content">
+            <div class="author">Raekel</div>
+            <div class="title">Fears To Fathom</div>
+            <div class="des">
+              Episode 4 Fears to Fathom: Ironbark Lookout tells the true story
+              of a man named Jack Nelson who works as a fire lookout at Ironbark
+              State Park. He experiences various terrifying events while working
+              there, including an encounter with the Ironbark cult that performs
+              rituals in the forest.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/parasos03.jpg" />
+          <div class="content">
+            <div class="author">Raekel</div>
+            <div class="title">Parasocial</div>
+            <div class="des">
+              Chilla's Art's game Parasocial tells the story of a Vtuber
+              streamer who is terrorized by a stalker. His real face was exposed
+              while he was livestreaming
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/hsh04.jpg" />
+          <div class="content">
+            <div class="author">Raekel</div>
+            <div class="title">Home Sweet Home</div>
+            <div class="des">
+              The story in this game is focused on the main protagonist, Tim,
+              whose life changes drastically after his wife disappears suddenly.
+              One night, he wakes up in a mysterious old building. Eventually
+              Tim decides to explore the place, trying to find a way out and
+              unravel some mysteries.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- list thumnail -->
+      <div class="thumbnail">
+        <div class="item">
+          <img src="image/ikaithumb01.jpg" />
+          <div class="content">
+            <div class="title">01</div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/ftfthumb02.jpg" />
+          <div class="content">
+            <div class="title">02</div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/parasosthumb03.jpg" />
+          <div class="content">
+            <div class="title">03</div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/hshthumb04.jpg" />
+          <div class="content">
+            <div class="title">04</div>
+            <div class="description"></div>
+          </div>
+        </div>
+      </div>
+      <!-- next prev -->
 
-          <a
-            href="https://duniagames.co.id/discover/article/game-horor-terbaik-dari-chillas-art"
-            >Baca selengkapnya...</a
-          >
-        </p>
-      </article>
-    </section>
-    <iframe
-      style="border-radius: 12px"
-      src="https://open.spotify.com/embed/playlist/2QmZwpVK0u3Ua8Vn0QyeT5?utm_source=generator&theme=0"
-      width="100%"
-      height="352"
-      frameborder="0"
-      allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- time running -->
+      <div class="time"></div>
+    </div>
 
-    <footer>
-      <p>&copy; 2024 Raekel Saroinsong. All rights reserved.</p>
-    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
